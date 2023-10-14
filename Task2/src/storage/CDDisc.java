@@ -1,7 +1,1 @@
-package storage;
-
-/**
- * СД Диск
- */
-public class CDDisc extends MusicStorage {
-}
+package storage;/** * СД Диск */public class CDDisc extends MusicStorage {}
