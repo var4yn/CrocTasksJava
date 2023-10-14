@@ -4,7 +4,7 @@ import storage.CDDisc;
 import storage.MusicStorage;
 
 /**
- * Устройство, способное воспроизводить музыку с CD Дисков
+ * РЈСЃС‚СЂРѕР№СЃС‚РІРѕ, СЃРїРѕСЃРѕР±РЅРѕРµ РІРѕСЃРїСЂРѕРёР·РІРѕРґРёС‚СЊ РјСѓР·С‹РєСѓ СЃ CD Р”РёСЃРєРѕРІ
  */
 public class CDPlayer extends MusicDevice {
 

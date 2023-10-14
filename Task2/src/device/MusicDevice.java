@@ -6,40 +6,40 @@ import music.Music;
 import storage.MusicStorage;
 
 /**
- * Абстрактный класс музыкального устройство
+ * РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ РјСѓР·С‹РєР°Р»СЊРЅРѕРіРѕ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ
  */
 public abstract class MusicDevice {
 
     /**
-     * Проверяет способно ли текущее устройство воспроизвести музыку с определенного носителя
-     * @param musicStorage - место хранения музыки
-     * @return true - если носитель поддерживается устройством, иначе false
+     * РџСЂРѕРІРµСЂСЏРµС‚ СЃРїРѕСЃРѕР±РЅРѕ Р»Рё С‚РµРєСѓС‰РµРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ РІРѕСЃРїСЂРѕРёР·РІРµСЃС‚Рё РјСѓР·С‹РєСѓ СЃ РѕРїСЂРµРґРµР»РµРЅРЅРѕРіРѕ РЅРѕСЃРёС‚РµР»СЏ
+     * @param musicStorage - РјРµСЃС‚Рѕ С…СЂР°РЅРµРЅРёСЏ РјСѓР·С‹РєРё
+     * @return true - РµСЃР»Рё РЅРѕСЃРёС‚РµР»СЊ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ СѓСЃС‚СЂРѕР№СЃС‚РІРѕРј, РёРЅР°С‡Рµ false
      */
     abstract boolean isValidStorage(MusicStorage musicStorage);
 
     /**
-     * Воспроизводит указанную песню с указанного хранилища
-     * @param musicStorage - место хранения музыки
-     * @param music - песня
-     * @throws InvalidMusicStorageException - выбрасывается, если музыкальное хранилище не поддерживается устройством
-     * @throws NoMusicOnStorage - выбрасывается, если песни нет в хранилище
+     * Р’РѕСЃРїСЂРѕРёР·РІРѕРґРёС‚ СѓРєР°Р·Р°РЅРЅСѓСЋ РїРµСЃРЅСЋ СЃ СѓРєР°Р·Р°РЅРЅРѕРіРѕ С…СЂР°РЅРёР»РёС‰Р°
+     * @param musicStorage - РјРµСЃС‚Рѕ С…СЂР°РЅРµРЅРёСЏ РјСѓР·С‹РєРё
+     * @param music - РїРµСЃРЅСЏ
+     * @throws InvalidMusicStorageException - РІС‹Р±СЂР°СЃС‹РІР°РµС‚СЃСЏ, РµСЃР»Рё РјСѓР·С‹РєР°Р»СЊРЅРѕРµ С…СЂР°РЅРёР»РёС‰Рµ РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚СЃСЏ СѓСЃС‚СЂРѕР№СЃС‚РІРѕРј
+     * @throws NoMusicOnStorage - РІС‹Р±СЂР°СЃС‹РІР°РµС‚СЃСЏ, РµСЃР»Рё РїРµСЃРЅРё РЅРµС‚ РІ С…СЂР°РЅРёР»РёС‰Рµ
      */
     public void play(MusicStorage musicStorage, Music music) throws InvalidMusicStorageException, NoMusicOnStorage {
-        // проверка на null
+        // РїСЂРѕРІРµСЂРєР° РЅР° null
         if(musicStorage == null) {
             throw new NullPointerException();
         }
-        // проверка: способно ли музыкальное устройство прочитать музыку с носителя
+        // РїСЂРѕРІРµСЂРєР°: СЃРїРѕСЃРѕР±РЅРѕ Р»Рё РјСѓР·С‹РєР°Р»СЊРЅРѕРµ СѓСЃС‚СЂРѕР№СЃС‚РІРѕ РїСЂРѕС‡РёС‚Р°С‚СЊ РјСѓР·С‹РєСѓ СЃ РЅРѕСЃРёС‚РµР»СЏ
         if (!isValidStorage(musicStorage)) {
             throw new InvalidMusicStorageException(this.getClass().getName(), musicStorage.getClass().getName());
         }
-        // проверка, что музыка есть в хранилище
+        // РїСЂРѕРІРµСЂРєР°, С‡С‚Рѕ РјСѓР·С‹РєР° РµСЃС‚СЊ РІ С…СЂР°РЅРёР»РёС‰Рµ
         if(!musicStorage.findMusic(music)) {
             throw new NoMusicOnStorage(music.getTitle(), music.getGroupName());
         }
 
-        // в случае успеха
-        System.out.printf("Устройство %s успешно воспроизвела с хранилища %s песню %s в исполнении %s%n",
+        // РІ СЃР»СѓС‡Р°Рµ СѓСЃРїРµС…Р°
+        System.out.printf("РЈСЃС‚СЂРѕР№СЃС‚РІРѕ %s СѓСЃРїРµС€РЅРѕ РІРѕСЃРїСЂРѕРёР·РІРµР»Р° СЃ С…СЂР°РЅРёР»РёС‰Р° %s РїРµСЃРЅСЋ %s РІ РёСЃРїРѕР»РЅРµРЅРёРё %s%n",
                 this.getClass().getSimpleName(), musicStorage.getClass().getSimpleName(), music.getTitle(), music.getGroupName());
 
     }

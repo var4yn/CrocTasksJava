@@ -4,7 +4,7 @@ import storage.MusicStorage;
 import storage.USB;
 
 /**
- * Устройство, способное воспроизводить музыку с USB
+ * РЈСЃС‚СЂРѕР№СЃС‚РІРѕ, СЃРїРѕСЃРѕР±РЅРѕРµ РІРѕСЃРїСЂРѕРёР·РІРѕРґРёС‚СЊ РјСѓР·С‹РєСѓ СЃ USB
  */
 public class MP3Player extends MusicDevice {
 
