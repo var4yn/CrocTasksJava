@@ -6,8 +6,8 @@ import music.Music;
 import java.util.HashSet;
 
 /**
- * Абстрактный класс хранилища музыки.
- * Имеет методы для добавления музыки и проверки находится ли музыка в хранилище.
+ * РђР±СЃС‚СЂР°РєС‚РЅС‹Р№ РєР»Р°СЃСЃ С…СЂР°РЅРёР»РёС‰Р° РјСѓР·С‹РєРё.
+ * РРјРµРµС‚ РјРµС‚РѕРґС‹ РґР»СЏ РґРѕР±Р°РІР»РµРЅРёСЏ РјСѓР·С‹РєРё Рё РїСЂРѕРІРµСЂРєРё РЅР°С…РѕРґРёС‚СЃСЏ Р»Рё РјСѓР·С‹РєР° РІ С…СЂР°РЅРёР»РёС‰Рµ
  */
 public abstract class MusicStorage {
     private HashSet<Music> musicList;
@@ -17,7 +17,7 @@ public abstract class MusicStorage {
     }
 
     public void addMusic(Music music) {
-        if(music == null) return; // игнорируется null
+        if(music == null) return; // РёРіРЅРѕСЂРёСЂСѓРµС‚СЃСЏ null
         musicList.add(music);
     }
 
