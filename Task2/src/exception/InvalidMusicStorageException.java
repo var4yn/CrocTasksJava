@@ -1,10 +1,10 @@
 package exception;
 
 /**
- * Исключение, возникающие при попытке музыкальным устройством прочитать недопустимое хранилище
+ * РСЃРєР»СЋС‡РµРЅРёРµ, РІРѕР·РЅРёРєР°СЋС‰РёРµ РїСЂРё РїРѕРїС‹С‚РєРµ РјСѓР·С‹РєР°Р»СЊРЅС‹Рј СѓСЃС‚СЂРѕР№СЃС‚РІРѕРј РїСЂРѕС‡РёС‚Р°С‚СЊ РЅРµРґРѕРїСѓСЃС‚РёРјРѕРµ С…СЂР°РЅРёР»РёС‰Рµ
  */
 public class InvalidMusicStorageException extends Exception{
     public InvalidMusicStorageException(String nameDevice, String nameStorage) {
-        super(nameDevice + " не поддерживает текущее хранилище : " + nameStorage);
+        super(nameDevice + " РЅРµ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ С‚РµРєСѓС‰РµРµ С…СЂР°РЅРёР»РёС‰Рµ : " + nameStorage);
     }
 }

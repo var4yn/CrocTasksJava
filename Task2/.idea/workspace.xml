@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36885f9f-d772-424f-bbc4-65a159a6afcb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Task1/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/device/CDPlayer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/device/MP3Player.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/device/Vinyl.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/exception/InvalidMusicStorageException.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/exception/NoMusicOnStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/music/Music.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/storage/CDDisc.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/storage/MusicStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/storage/Plate.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/storage/USB.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exception/NoMusicOnStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/NoMusicOnStorage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/Music.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/music/Music.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/storage/CDDisc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/CDDisc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/storage/Plate.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/storage/Plate.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,6 +40,20 @@
     "settings.editor.selected.configurable": "File.Encoding"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="Task2" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -58,7 +62,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1697286039908</updated>
-      <workItem from="1697286042894" duration="144000" />
+      <workItem from="1697286042894" duration="430000" />
     </task>
     <servers />
   </component>

@@ -1,10 +1,10 @@
 package exception;
 
 /**
- * Исключение возникающее, если музыки нет в хранилище
+ * РСЃРєР»СЋС‡РµРЅРёРµ РІРѕР·РЅРёРєР°СЋС‰РµРµ, РµСЃР»Рё РјСѓР·С‹РєРё РЅРµС‚ РІ С…СЂР°РЅРёР»РёС‰Рµ
  */
 public class NoMusicOnStorage extends Exception {
     public NoMusicOnStorage(String title, String groupName) {
-        super(String.format("Музыки с названием %s в исполнении %s нет в хранилище", title, groupName));
+        super(String.format("РњСѓР·С‹РєРё СЃ РЅР°Р·РІР°РЅРёРµРј %s РІ РёСЃРїРѕР»РЅРµРЅРёРё %s РЅРµС‚ РІ С…СЂР°РЅРёР»РёС‰Рµ", title, groupName));
     }
 }

@@ -1,16 +1,16 @@
 package music;
 
 /**
- * Объект инкапсулирует названия песни и исполнителя
+ * РћР±СЉРµРєС‚ РёРЅРєР°РїСЃСѓР»РёСЂСѓРµС‚ РЅР°Р·РІР°РЅРёСЏ РїРµСЃРЅРё Рё РёСЃРїРѕР»РЅРёС‚РµР»СЏ
  */
 public class Music {
     private final String title;
     private final String groupName;
 
     /**
-     * Конструктор
-     * @param title - название песни
-     * @param groupName - название исполнителя
+     * РљРѕРЅСЃС‚СЂСѓРєС‚РѕСЂ
+     * @param title - РЅР°Р·РІР°РЅРёРµ РїРµСЃРЅРё
+     * @param groupName - РЅР°Р·РІР°РЅРёРµ РёСЃРїРѕР»РЅРёС‚РµР»СЏ
      */
     public Music(String title, String groupName) {
         this.title = title;

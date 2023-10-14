@@ -1,7 +1,7 @@
 package storage;
 
 /**
- * Пластинка
+ * РџР»Р°СЃС‚РёРЅРєР°
  */
 public class Plate extends MusicStorage {
 }
