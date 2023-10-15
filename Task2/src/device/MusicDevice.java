@@ -1,12 +1,12 @@
 package device;
 
 import exception.InvalidMusicStorageException;
-import exception.NoMusicOnStorage;
+import exception.NoMusicOnStorageException;
 import music.Music;
 import storage.MusicStorage;
 
 /**
- * Абстрактный класс музыкального устройство
+ * Абстрактный класс музыкального устройста
  */
 public abstract class MusicDevice {
 
@@ -22,20 +22,20 @@ public abstract class MusicDevice {
      * @param musicStorage - место хранения музыки
      * @param music - песня
      * @throws InvalidMusicStorageException - выбрасывается, если музыкальное хранилище не поддерживается устройством
-     * @throws NoMusicOnStorage - выбрасывается, если песни нет в хранилище
+     * @throws NoMusicOnStorageException - выбрасывается, если песни нет в хранилище
      */
-    public void play(MusicStorage musicStorage, Music music) throws InvalidMusicStorageException, NoMusicOnStorage {
+    public void play(MusicStorage musicStorage, Music music) throws InvalidMusicStorageException, NoMusicOnStorageException {
         // проверка на null
         if(musicStorage == null) {
-            throw new NullPointerException();
+            throw new InvalidMusicStorageException(this.getClass().getName(), "NULL");
         }
         // проверка: способно ли музыкальное устройство прочитать музыку с носителя
         if (!isValidStorage(musicStorage)) {
-            throw new InvalidMusicStorageException(this.getClass().getName(), musicStorage.getClass().getName());
+            throw new InvalidMusicStorageException(this.getClass().getName(), musicStorage.getClass().getSimpleName());
         }
-        // проверка, что музыка есть в хранилище
+        // проверка: есть ли музыка в хранилище
         if(!musicStorage.findMusic(music)) {
-            throw new NoMusicOnStorage(music.getTitle(), music.getGroupName());
+            throw new NoMusicOnStorageException(music.getTitle(), music.getGroupName(), musicStorage.getClass().getSimpleName());
         }
 
         // в случае успеха

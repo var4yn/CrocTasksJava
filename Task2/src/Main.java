@@ -3,7 +3,7 @@ import device.MP3Player;
 import device.MusicDevice;
 import device.Vinyl;
 import exception.InvalidMusicStorageException;
-import exception.NoMusicOnStorage;
+import exception.NoMusicOnStorageException;
 import music.Music;
 import storage.CDDisc;
 import storage.MusicStorage;
@@ -63,7 +63,7 @@ public class Main {
     private static void printTest(MusicDevice device, MusicStorage musicStorage, Music music) {
         try {
             device.play(musicStorage, music);
-        } catch (InvalidMusicStorageException | NoMusicOnStorage e) {
+        } catch (InvalidMusicStorageException | NoMusicOnStorageException e) {
             System.out.println("Exception: " + e.getMessage());
         }
 
