@@ -32,6 +32,8 @@ public class Main {
         var usb = new USB();
         var music = new Music("Personal Jesus", "Depeche Mode");
 
+        usb.addMusic(music); // добавить музыку на носитель
+        cdDisc.addMusic(music); // добавить музыку на носитель
 
         // проверка на успешное воспроизвидение с совместимого носителя
         printTest(new CDPlayer(), cdDisc, music);
