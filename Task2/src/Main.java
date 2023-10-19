@@ -10,7 +10,7 @@ import storage.MusicStorage;
 import storage.Plate;
 import storage.USB;
 
-/**
+/*
  * Музыкальная система 0__0
  *
  *

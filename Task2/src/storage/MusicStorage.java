@@ -10,23 +10,23 @@ import java.util.HashSet;
  * Имеет методы для добавления музыки и проверки находится ли музыка в хранилище
  */
 public abstract class MusicStorage {
-    private HashSet<Music> musicList;
+    private HashSet<Music> musicSet;
 
     public MusicStorage() {
-        musicList = new HashSet<>();
+        musicSet = new HashSet<>();
     }
 
     public void addMusic(Music music) {
         if(music == null) return; // игнорируется null
-        musicList.add(music);
+        musicSet.add(music);
     }
 
     public void removeMusic(Music music) {
-        musicList.remove(music);
+        musicSet.remove(music);
     }
 
     public boolean findMusic(Music music) {
-        return musicList.contains(music);
+        return musicSet.contains(music);
     }
 
 }
