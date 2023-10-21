@@ -12,9 +12,9 @@ public final class Application {
      *            аргументы
      */
     public static void main(final String[] args) {
-        var checker = KnightsMoveCheckerFactory.get();
+        var knightsMoveChecker = KnightsMoveCheckerFactory.get();
         try {
-            checker.check(args);
+            knightsMoveChecker.check(args);
             System.out.print("OK");
         } catch (Exception e) {
             System.out.print(e.getMessage());
