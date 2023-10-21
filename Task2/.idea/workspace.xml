@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36885f9f-d772-424f-bbc4-65a159a6afcb" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task2/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/device/MusicDevice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task2/device/MusicDevice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/exception/NoMusicOnStorage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/Task2/music/Music.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/Task2/music/Music.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/device/MusicDevice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/device/MusicDevice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exception/NoMusicOnStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/exception/NoMusicOnStorageException.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
