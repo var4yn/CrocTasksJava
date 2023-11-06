@@ -20,12 +20,23 @@ public class Main {
 
         var matrix = MatrixExample.C;
 
-        // используется ForkJoinPool для эффективной работы с рекурсивными задачами
-        try (var executorService = new ForkJoinPool(); ) {
-            printResult("detManyThread", matrix, () -> detManyThread(matrix.getMatrix(), executorService));
-        }
+
+        printResult("computeInThreads", matrix, () -> computeInThreads(matrix.getMatrix()));
 
         printResult("detOneThread", matrix, () -> detOneThread(matrix.getMatrix()));
+    }
+
+    /**
+     * Вычисляет определитель матрицы через пул потоков ForkJoinPool.
+     * @param matrix матрицы
+     * @return определитель матрицы
+     */
+    private static long computeInThreads(long[][] matrix) {
+        // Инкаспулирует создание пула потоков
+        // используется ForkJoinPool для эффективной работы с рекурсивными задачами
+        try (var executorService = new ForkJoinPool(); ) {
+            return detManyThread(matrix, executorService);
+        }
     }
 
     /**
