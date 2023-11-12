@@ -2,20 +2,20 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Реализация интерфейса BlackListFilter
+ * Р РµР°Р»РёР·Р°С†РёСЏ РёРЅС‚РµСЂС„РµР№СЃР° BlackListFilter
  */
 public class BlackListFilterImpl implements BlackListFilter {
     @Override
     public void filterComments(List<String> comments, Set<String> blackList) {
-        // перебор комментариев через итератор
+        // РїРµСЂРµР±РѕСЂ РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ С‡РµСЂРµР· РёС‚РµСЂР°С‚РѕСЂ
         for(var iterator = comments.iterator(); iterator.hasNext(); ) {
-            // текущий комментарий
+            // С‚РµРєСѓС‰РёР№ РєРѕРјРјРµРЅС‚Р°СЂРёР№
             var comment = iterator.next().toLowerCase();
 
-            // перебор всех слов из blackList
+            // РїРµСЂРµР±РѕСЂ РІСЃРµС… СЃР»РѕРІ РёР· blackList
             for(var badWord : blackList) {
-                /*  если в комментарии содержится слово из черного списка,
-                    комментарий удаляется из List<String> */
+                /*  РµСЃР»Рё РІ РєРѕРјРјРµРЅС‚Р°СЂРёРё СЃРѕРґРµСЂР¶РёС‚СЃСЏ СЃР»РѕРІРѕ РёР· С‡РµСЂРЅРѕРіРѕ СЃРїРёСЃРєР°,
+                    РєРѕРјРјРµРЅС‚Р°СЂРёР№ СѓРґР°Р»СЏРµС‚СЃСЏ РёР· List<String> */
                 if(comment.contains(badWord)) {
                     iterator.remove();
                     break;

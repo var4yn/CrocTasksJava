@@ -5,22 +5,22 @@ import java.util.List;
 import java.util.Set;
 
 /**
- * Демонстрация работы BlackListFilterImpl.
- * Удаление комментариев, содержащих слова из blackList
+ * Р”РµРјРѕРЅСЃС‚СЂР°С†РёСЏ СЂР°Р±РѕС‚С‹ BlackListFilterImpl.
+ * РЈРґР°Р»РµРЅРёРµ РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ, СЃРѕРґРµСЂР¶Р°С‰РёС… СЃР»РѕРІР° РёР· blackList
  */
 public class Main {
     public static void main(String[] args) {
 
         var filter = new BlackListFilterImpl();
-        // список комментариев
-        var commentsList = Arrays.asList("постигла депрессия", "привет пока всё как всегда");
-        // множество слов из черного списка
-        var badWords = Arrays.asList("депрессия", "блиц");
+        // СЃРїРёСЃРѕРє РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ
+        var commentsList = Arrays.asList("РїРѕСЃС‚РёРіР»Р° РґРµРїСЂРµСЃСЃРёСЏ", "РїСЂРёРІРµС‚ РїРѕРєР° РІСЃС‘ РєР°Рє РІСЃРµРіРґР°");
+        // РјРЅРѕР¶РµСЃС‚РІРѕ СЃР»РѕРІ РёР· С‡РµСЂРЅРѕРіРѕ СЃРїРёСЃРєР°
+        var badWords = Arrays.asList("РґРµРїСЂРµСЃСЃРёСЏ", "Р±Р»РёС†");
 
         List<String> comments = new ArrayList<>(commentsList);
         Set<String> blackList = new HashSet<>(badWords);
 
-        // оставляет комментарии, которые не содержат слов из blackList
+        // РѕСЃС‚Р°РІР»СЏРµС‚ РєРѕРјРјРµРЅС‚Р°СЂРёРё, РєРѕС‚РѕСЂС‹Рµ РЅРµ СЃРѕРґРµСЂР¶Р°С‚ СЃР»РѕРІ РёР· blackList
         filter.filterComments(comments, blackList);
         for(var i : comments) {
             System.out.println(i);
