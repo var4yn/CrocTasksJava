@@ -1,0 +1,45 @@
+[
+  {
+    "id": 1,
+    "sellerId": 1,
+    "productId": 1,
+    "number": 20,
+    "date": 1246457723525
+  },
+  {
+    "id": 2,
+    "sellerId": 1,
+    "productId": 2,
+    "number": 60,
+    "date": 1345344363462
+  },
+  {
+    "id": 3,
+    "sellerId": 2,
+    "productId": 3,
+    "number": 160,
+    "date": 1091341364366
+  },
+  {
+    "id": 4,
+    "sellerId": 2,
+    "productId": 2,
+    "number": 120,
+    "date": 345344363462
+  },
+  {
+    "id": 5,
+    "sellerId": 1,
+    "productId": 1,
+    "number": 3,
+    "date": 345344363462
+  },
+  {
+    "id": 6,
+    "sellerId": 3,
+    "productId": 6,
+    "number": 20,
+    "date": 1701177840902
+  }
+
+]

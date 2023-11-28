@@ -1,0 +1,38 @@
+[
+  {
+    "sellerId": 1,
+    "productId": 1,
+    "price": 1500,
+    "count": 50
+  },
+  {
+    "sellerId": 1,
+    "productId": 2,
+    "price": 500,
+    "count": 300
+  },
+  {
+    "sellerId": 6,
+    "productId": 3,
+    "price": 6000,
+    "count": 4
+  },
+  {
+    "sellerId": 2,
+    "productId": 1,
+    "price": 400,
+    "count": 60
+  },
+  {
+    "sellerId": 3,
+    "productId": 2,
+    "price": 400,
+    "count": 650
+  },
+  {
+    "sellerId": 6,
+    "productId": 6,
+    "price": 50,
+    "count": 20
+  }
+]

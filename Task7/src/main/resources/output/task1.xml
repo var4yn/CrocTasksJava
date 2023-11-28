@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<elements>
+    <element count="60" firstNameSeller="Petr" lastNameSeller="Ivanov">washing machine</element>
+    <element count="650" firstNameSeller="Sevastyan" lastNameSeller="Semenov">plate</element>
+    <element count="4" firstNameSeller="Nikolay" lastNameSeller="Petrov">playstation 5</element>
+    <element count="20" firstNameSeller="Nikolay" lastNameSeller="Petrov">box</element>
+</elements>
